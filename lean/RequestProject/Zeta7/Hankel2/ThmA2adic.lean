@@ -24,7 +24,7 @@ namespace Hankel2
 open Fam3
 
 /-- **Paper Lemma 4.3** (v4.1 numbering; the analytic step of Theorem 4.1), as a statement.
-The name `Lemma42` is kept from round 1.  It is proved for `K ≥ 1` (the only case covered by the
+The name `Lemma42` is kept from stage 1.  It is proved for `K ≥ 1` (the only case covered by the
 paper) in the ζ₂(7) formalization. -/
 def Lemma42 : Prop :=
   ∀ n K : ℕ, n % 2 = 1 → K ≤ 3 * n + 1 → ∀ B : ℚ[X], IntValued B → B.natDegree ≤ 2 * K - 2 →

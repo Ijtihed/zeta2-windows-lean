@@ -4,7 +4,7 @@ import RequestProject.TwoAdic.ArchField
 # Paper II: Theorem 1.1 and Corollary 1.2, unconditionally
 
 All inputs of `TwoAdicInputsR3` are now proved: its only field `arch` is `Arch.arch_field`
-(II Theorem 4.1; P, Theorem 6.1).  Together with the fields discharged in rounds 1–3
+(II Theorem 4.1; P, Theorem 6.1).  Together with the fields discharged in stages 1–3
 (`decay_field`, `tree_field`, `circCert`, `certificate_field`, `Dom.nonvanishing_field`,
 `assembly_field`), this gives Theorem 1.1 for every admissible `(q, d)`.  Corollary 1.2 is
 derived from Theorem 1.1 by `cor_1_2_of_thm`; in particular `Cor12Sets` comes from `Thm11` at
@@ -13,7 +13,7 @@ derived from Theorem 1.1 by `cor_1_2_of_thm`; in particular `Cor12Sets` comes fr
 
 namespace TwoAdicWin
 
-/-- The inputs of round 3, all proved. -/
+/-- The inputs of stage 3, all proved. -/
 def inputsR3 : TwoAdicInputsR3 where
   arch := Arch.arch_field
 

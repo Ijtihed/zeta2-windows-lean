@@ -13,7 +13,7 @@ d0 = json.load(open(CERT))
 
 def broken(kind):
     d = copy.deepcopy(d0)
-    if kind == 'empty_subcells':            # the referee's example: no integration domain, step 0
+    if kind == 'empty_subcells':            # no integration domain, step 0
         for c in d['cells']:
             c['subcells'] = []
         d['step'] = '0'

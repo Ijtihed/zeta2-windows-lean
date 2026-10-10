@@ -1,6 +1,7 @@
 # On the irrationality of 2-adic zeta values in short intervals: Lean 4 formalization
 
-Lean 4 proof of the main results of *On the irrationality of 2-adic zeta values in short intervals* by Ijtihed Kilani.
+Lean 4 proof of the main results of *On the irrationality of 2-adic zeta values in short intervals* by Ijtihed Kilani,
+[doi:10.5281/zenodo.23284853](https://doi.org/10.5281/zenodo.23284853).
 
 ```lean
 -- lean/RequestProject/TwoAdic/MainFinal.lean

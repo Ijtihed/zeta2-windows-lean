@@ -123,16 +123,3 @@ Wed Oct  7 06:28:32 UTC 2026
 EXIT=0
 Wed Oct  7 07:08:23 UTC 2026
 ```
-
-## 5. Git
-
-### `git status --short` (before committing VERIFY.md)
-```
-?? VERIFY.md
-```
-
-### `git diff --stat d2984d2 HEAD` (d2984d2 = start of this task; after committing VERIFY.md)
-```
- VERIFY.md | 127 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 127 insertions(+)
-```

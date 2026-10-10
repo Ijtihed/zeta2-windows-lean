@@ -1,13 +1,13 @@
 import RequestProject.TwoAdic.AssemblyField
 
 /-!
-# Paper II, Theorem 1.1 — round 3: field `assembly` discharged
+# Paper II, Theorem 1.1 — stage 3: field `assembly` discharged
 
 * `assembly_field` (`AssemblyField.lean`): the field `assembly` of `TwoAdicInputsR2` verbatim
   (II, Cor. 5.4), with `circ = circCert`.
 
 `TwoAdicInputsR3` is `TwoAdicInputsR2` without `assembly`: its only field is `arch`, verbatim.
-`toR2` rebuilds the round-2 inputs; `thm_1_1_of_inputs_r3` and `cor_1_2_of_inputs_r3` derive
+`toR2` rebuilds the stage-2 inputs; `thm_1_1_of_inputs_r3` and `cor_1_2_of_inputs_r3` derive
 Theorem 1.1 and Corollary 1.2 from the archimedean field alone.
 -/
 
@@ -21,7 +21,7 @@ structure TwoAdicInputsR3 where
       Real.log (PadicWin.l1Mv (hankelPoly q d n (q * n))) ≤
         -((q : ℝ) ^ 2 * (n : ℝ) ^ 2 * Real.log n) + (Fconst q + ε) * (n : ℝ) ^ 2
 
-/-- The round-3 inputs together with `assembly_field` give the round-2 inputs. -/
+/-- The stage-3 inputs together with `assembly_field` give the stage-2 inputs. -/
 def TwoAdicInputsR3.toR2 (I : TwoAdicInputsR3) : TwoAdicInputsR2 where
   arch := I.arch
   assembly := assembly_field

@@ -4,7 +4,7 @@ import RequestProject.TwoAdic.CertFinal
 import RequestProject.TwoAdic.NVMain
 
 /-!
-# Paper II, Theorem 1.1 — round 2: fields `tree`, `circ`, `certificate`, `nonvanishing` discharged
+# Paper II, Theorem 1.1 — stage 2: fields `tree`, `circ`, `certificate`, `nonvanishing` discharged
 
 * `tree_field` (`TreeBound.lean`): field (iii-a) `tree`, II Theorem A.2, for general `q` and the
   multivariable Hankel polynomial, for every prime `ℓ`;
@@ -42,7 +42,7 @@ structure TwoAdicInputsR2 where
           (q : ℝ) ^ 2 * (n : ℝ) ^ 2 * Real.logb 2 n
             + (q : ℝ) ^ 2 * Ctil M₀ circCert (deltaOf q d) * (n : ℝ) ^ 2 + ε * (n : ℝ) ^ 2
 
-/-- The round-2 inputs together with the discharged fields give the inputs of stage 1. -/
+/-- The stage-2 inputs together with the discharged fields give the inputs of stage 1. -/
 noncomputable def TwoAdicInputsR2.toOpen (I : TwoAdicInputsR2) : TwoAdicInputsOpen where
   arch := I.arch
   tree := tree_field
