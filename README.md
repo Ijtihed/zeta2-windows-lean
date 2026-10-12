@@ -39,7 +39,7 @@ The certificate modules are checked by kernel evaluation and need time and memor
 
 ## Contents
 
-- `lean/`: the Lean project, exactly the 403 modules imported by the final theorems. `TwoAdic/` and `Frame/` are this
+- `lean/`: the Lean project, exactly the 407 modules imported by the final theorems. `TwoAdic/` and `Frame/` are this
   formalization. `Zeta7/` is reused from the author's ζ₂(7) formalization and `Zeta35/` from the ζ₃(5) formalization
   ([doi:10.5281/zenodo.23203596](https://doi.org/10.5281/zenodo.23203596)). In comments, [P] is the ζ₂(7) paper
   ([doi:10.5281/zenodo.23058762](https://doi.org/10.5281/zenodo.23058762)), N the ζ₃(5) paper and II this paper.
